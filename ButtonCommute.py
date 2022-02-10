@@ -1,13 +1,11 @@
-from functools import partial
 from discord_components import DiscordComponents, ComponentsBot, Select, SelectOption, Button, ButtonStyle, ActionRow
-import discord, sqlite3, datetime, os, setting, random
+import discord, sqlite3, datetime, os, setting
 from discord_components.ext.filters import user_filter
-import asyncio, requests, json
+import asyncio
 from setting import admin_id
 from datetime import timedelta
-from discord_webhook import DiscordEmbed, DiscordWebhook
+from discord_webhook import DiscordEmbed
 from discord_buttons_plugin import ButtonType
-import shutil
 
 client = discord.Client()
 
